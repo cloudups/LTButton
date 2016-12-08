@@ -10,7 +10,6 @@ import android.graphics.Point;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -81,7 +80,7 @@ public class LTButton extends View {
         super(context, attrs, defStyleAttr);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public LTButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
