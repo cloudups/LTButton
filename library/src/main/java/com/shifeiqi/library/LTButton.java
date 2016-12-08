@@ -1,6 +1,7 @@
 package com.shifeiqi.library;
 
 import android.animation.ValueAnimator;
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -115,6 +116,7 @@ public class LTButton extends View {
     }
 
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void startAnimation() {
 
 
